@@ -1,5 +1,5 @@
-# This is the Heading of this document
-## This is the second biggest heading
+# COURSE: OHJELMISTOTEKNIIKKA
+## Student: Ville Tonteri
 
 ** ** this is Ville Tonteri's repository, unauthorised use is prohibited!
 
