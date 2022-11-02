@@ -5,4 +5,4 @@
 
 This repository contains all material related to course Ohjelmistotekniikka, in Helsinki University, department on computer science.
 
-Material can be found here [https://github.com/vtonteri/ot-harjoitustyo/tree/main/laskarit/viikko1] (https://github.com/vtonteri/ot-harjoitustyo/tree/main/laskarit/viikko1)
+Material can be found here [https://github.com/vtonteri/ot-harjoitustyo/tree/main/laskarit/viikko1]
