@@ -1,8 +1,10 @@
 # COURSE: OHJELMISTOTEKNIIKKA
 ## Student: Ville Tonteri
 
-** ** this is Ville Tonteri's repository, unauthorised use is prohibited!
+### Tasks:
 
-This repository contains all material related to course Ohjelmistotekniikka, in Helsinki University, department on computer science.
+### Week 1:
 
-Material can be found here [https://github.com/vtonteri/ot-harjoitustyo/tree/main/laskarit/viikko1]
+[gitlog.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
+[komentorivi.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
+
