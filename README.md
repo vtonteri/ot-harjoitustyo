@@ -1,7 +1,7 @@
-# *Ohjelmistotekniikka, harjoitustyö*
-## *Tehtävät*
+# **Ohjelmistotekniikka, harjoitustyö**
+## **Tehtävät**
 
-### *Viikko 1:*
+### **Viikko 1:**
 
 **[gitlog.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)**
 
