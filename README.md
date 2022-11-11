@@ -1,13 +1,10 @@
-# COURSE: OHJELMISTOTEKNIIKKA
-## Student: Ville Tonteri
+# *Ohjelmistotekniikka, harjoitustyö*
+## *Tehtävät*
 
-### Tasks:
-
-### Week 1:
+### *Viikko 1:*
 
 **[gitlog.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)**
 
 
 **[komentorivi.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)**
 
-**Tanne tulikin lisaa tekstia**
