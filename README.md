@@ -5,6 +5,6 @@
 
 **[gitlog.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)**
 
-
 **[komentorivi.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)**
 
+**[Coverage_Report.png] (https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko2/unicafe/Coverage_Report.png)**
