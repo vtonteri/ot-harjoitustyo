@@ -52,7 +52,6 @@ class TestKassapaate(unittest.TestCase):
         
         #self.assertTrue(self.kortti_toimii.ota_rahaa(240))
         self.assertEqual(str(self.kortti_toimii), "Kortilla on rahaa 3.60 euroa")
-        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000 + 240)
         self.assertEqual(self.kassapaate.edulliset, 1)
         self.assertEqual(self.kassapaate.maukkaat, 0)
 
@@ -61,16 +60,13 @@ class TestKassapaate(unittest.TestCase):
 
         self.assertFalse(self.kortti_ei_toimi.ota_rahaa(240))
         self.assertEqual(str(self.kortti_ei_toimi), "Kortilla on rahaa 1.00 euroa")
-        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
         self.assertEqual(self.kassapaate.edulliset, 0)
         self.assertEqual(self.kassapaate.maukkaat, 0)
         self.assertFalse(self.kassapaate.syo_edullisesti_kortilla(self.kortti_ei_toimi))
 
     def test_korttiosto_toimii_maukkaasti(self):
-
         self.kassapaate.syo_maukkaasti_kortilla(self.kortti_toimii)
 
-        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000 + 400)
         self.assertEqual(self.kassapaate.edulliset, 0)
         self.assertEqual(self.kassapaate.maukkaat, 1)
 
@@ -79,7 +75,17 @@ class TestKassapaate(unittest.TestCase):
 
         self.assertFalse(self.kortti_ei_toimi.ota_rahaa(240))
         self.assertEqual(str(self.kortti_ei_toimi), "Kortilla on rahaa 1.00 euroa")
-        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
         self.assertEqual(self.kassapaate.edulliset, 0)
         self.assertEqual(self.kassapaate.maukkaat, 0)
         self.assertFalse(self.kassapaate.syo_edullisesti_kortilla(self.kortti_ei_toimi))
+
+    def test_lataa_rahaa_kortille_toimii(self):
+        self.kassapaate.lataa_rahaa_kortille(self.kortti_toimii, 100)
+
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100100)
+        self.assertTrue(self.kortti_toimii)
+
+    def test_lataa_rahaa_kortille_ei_toimi(self):
+        self.kassapaate.lataa_rahaa_kortille(self.kortti_toimii, -10)
+
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
