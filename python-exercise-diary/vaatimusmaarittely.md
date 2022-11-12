@@ -15,9 +15,9 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
 
 ![Käyttöliittymäluonnos](https://github.com/vtonteri/ot-harjoitustyo/blob/main/python-exercise-diary/kayttoliittymaluonnos.jpg)
 
-## Perusversion tarjoama toiminnallisuus
+# Perusversion tarjoama toiminnallisuus
 
-# Ennen kirjautumista
+## Ennen kirjautumista
 
 - Käyttäjä voi luoda itselleen käyttäjätunnuksen ja salasanan
     - Profiili tallennetaan tietokantaan ja käyttäjätunnuksen tulee olla uniikki. Käyttäjätunnuksen pitää olla vähintään viisi merkkiä pitkä, eikä se saa sisältää ääkkösiä tai erikoismerkkejä.
@@ -28,7 +28,7 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
     - Pääkäyttäjä kirjautuu järjestelmään samaa toiminnallisuutta käyttäen
     - Jos salasana tai käyttäjätunnus ovat virheelliset, tai käyttäjätunnusta ei ole luotu, ilmoittaa ohjelma tästä ja palaa takaisin kirjautumisikkunaan
 
-# Kirjautumisen jälkeen
+## Kirjautumisen jälkeen
 
 - Avautuvassa näkymässä näytetään yksityiskohtainen näkymä meneillään olevasta päivästä sekä joko viikko- tai kuukausinäkymä
     - Meneillään olevan päivän yksityiskohtainen näkymä on sijoitettu avautuneen ikkunan yläosaan
@@ -72,7 +72,7 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
 
 - Lopuksi käyttäjä voi kirjautua ulos ohjelmasta
 
-## **Jatkokehitysideoita**
+# **Jatkokehitysideoita**
 
 Perusversion jälkeen sovellusta voidaan laajentaa esimerkiksi seuraavilla toiminnallisuuksilla:
 
