@@ -13,7 +13,7 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
 
 ## Käyttöliittymäluonnos
 
-![Käyttöliittymäluonnos](https://github.com/vtonteri/ot-harjoitustyo/blob/main/python-exercise-diary/vaatimusmaarittely.jpg)
+![Käyttöliittymäluonnos](https://github.com/vtonteri/ot-harjoitustyo/blob/main/python-exercise-diary/kayttoliittymaluonnos.jpg)
 
 ## **Jatkokehitysideoita**
 
