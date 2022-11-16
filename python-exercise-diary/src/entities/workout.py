@@ -1,3 +1,5 @@
+from user import User
+
 class WorkOut:
     """Class for a one workout object. 
     
@@ -29,10 +31,12 @@ class WorkOut:
         self.workout_repetition = repetition #Weekly: True, Monthly: False
         self.workout_type = workout_type
         self.workout_details_weight_lifting = {}
+        self.workout_sets_weight_lifting = {}
         self.workout_details_cardio = {}
         self.workout_id = workout_id
 
+    def add_weight_lifting_set(self, name, repetitions, weight):
+        self.workout_sets_weight_lifting[name] = (repetitions, weight)
 
-        pass
 
 
