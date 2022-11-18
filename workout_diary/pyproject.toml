@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "python-exercise-diary"
+name = "workout_diary"
 version = "0.1.0"
 description = ""
 authors = ["Ville <ville.tonteri@helsinki.fi>"]
 readme = "README.md"
-packages = [{include = "python_exercise_diary"}]
+packages = [{include = "workout_diary"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"

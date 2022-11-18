@@ -1,5 +1,5 @@
-from entities.user import User
-from entities.workout import Workout
+from .entities.user import User
+from .entities.workout import Workout
 
 class WorkoutService:
 

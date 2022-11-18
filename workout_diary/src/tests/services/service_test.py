@@ -1,8 +1,8 @@
 import unittest
 
-from ...services.workout_service import WorkoutService
-from ...entities.user import User
-from ...entities.workout import Workout
+from ..services.workout_service import WorkoutService
+#from ..entities.user import User
+#from ..entities.workout import Workout
 
 class TestWorkoutService(unittest.TestCase):
     def setUp(self):
