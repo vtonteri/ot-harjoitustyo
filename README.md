@@ -22,3 +22,5 @@
 **[Monopoli-luokkakaavio, laajempi](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko3/MonopolyClassWide.jpg)**
 
 **[Changelog](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/changelog.md)**
+
+**[Workout Diary Manual](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/manual.md)**
