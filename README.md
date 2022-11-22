@@ -11,12 +11,14 @@
 
 **[Coverage_Report.png](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko2/unicafe/Coverage_Report.png)**
 
-**[Tuntikirjanpito](https://github.com/vtonteri/ot-harjoitustyo/blob/main/python-exercise-diary/dokumentaatio/tuntikirjanpito.md)**
+**[Tuntikirjanpito](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/tuntikirjanpito.md)**
 
-**[Vaatimusmäärittely](https://github.com/vtonteri/ot-harjoitustyo/blob/main/python-exercise-diary/dokumentaatio/vaatimusmaarittely.md)**
+**[Vaatimusmäärittely](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/vaatimusmaarittely.md)**
 
 ### **Viikko 3:**
 
 **[Monopoli-luokkakaavio](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko3/MonopolyClass.jpg)**
 
 **[Monopoli-luokkakaavio, laajempi](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko3/MonopolyClassWide.jpg)**
+
+**[Changelog](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/changelog.md)**
