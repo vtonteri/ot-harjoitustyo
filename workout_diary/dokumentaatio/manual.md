@@ -7,16 +7,16 @@ Application can be started by running *main.py* file, it is located in the src-d
 Ways to run the *main.py* file:
 
 - go to *workout_diary* -directory in a command shell or command prompt and type: 
-"""
+'''
 poetry run invoke start
-"""
+'''
 
 OR
 
 - go to *workout_diary/src* -directory in a command shell or command prompt and type: 
-"""
+'''
 python3 main.py
-"""
+'''
 
 ## **What the application does?**
 
@@ -30,6 +30,6 @@ You can press *Stop application* button or just close the window.
 
 Tests can be run in the following way: 
 - go to *workout_diary* -directory in a command shell or command prompt and type: 
-"""
+'''
 poetry run invoke test
-"""
+'''
