@@ -7,4 +7,5 @@
 | 16.11. | 3 | Ohjelmarungon koodaus |
 | 17.11. | 1 | Ohjelmarungon koodaus |
 | 18.11. | 2 | Ohjelmarungon koodaus |
-| Yht | 8 |  |
+| 22.11. | 1 | Testien kirjoittaminen |
+| Yht | 9 |  |
