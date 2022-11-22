@@ -5,13 +5,16 @@ class WorkoutService:
 
     def __init__(self) -> None:
         pass
+
+    def __str__(self) -> str:
+        pass
         
     def create_workout(self, name: str, repetition: bool, workout_type: str, workout_id:None):
 
         if workout_type == "weight_lift":
-            workout = Workout(name, repetition, workout_type, workout_id)
+            self.workout = Workout(name, repetition, workout_type, workout_id)
         elif workout_type == "cardio":
-            workout = Workout(name, )
+            self.workout = Workout(name, )
 
         #Workout is saved in the database
         #workout id links it to a certain user

@@ -4,6 +4,7 @@ import calendar
 
 class Calendar:
 
-
     def __init__(self) -> None:
-        pass
+        self.calendar = Calendar
+        self.user = User
+        

@@ -13,3 +13,7 @@ class TestWorkoutService(unittest.TestCase):
     def test_weight_adjust(self):
         answer = WorkoutService.adjust_weights(self, 100, 10)
         self.assertEqual(answer, 110)
+
+    def test_add_weight_lifting_set(self):
+        self.workout.add_weight_lifting_set("penkkipunnerrus", 3, 80)
+        self.assertEqual(self.workout.workout_sets_weight_lifting["penkkipunnerrus"], (3, 80))
