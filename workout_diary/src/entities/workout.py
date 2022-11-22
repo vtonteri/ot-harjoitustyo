@@ -1,6 +1,6 @@
-from user import User
+from entities.user import User
 
-class WorkOut:
+class Workout:
     """Class for a one workout object. 
     
     Attributes: 

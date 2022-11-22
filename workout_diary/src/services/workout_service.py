@@ -1,5 +1,5 @@
-#from entities.user import User
-#from entities.workout import Workout
+from entities.user import User
+from entities.workout import Workout
 
 class WorkoutService:
 
@@ -8,14 +8,13 @@ class WorkoutService:
         
     def create_workout(self, name: str, repetition: bool, workout_type: str, workout_id:None):
 
-        #if workout_type == "weight_lift":
-        #    workout = Workout(name, repetition, workout_type, workout_id)
-        #elif workout_type == "cardio":
-        #    workout = Workout(name, )
+        if workout_type == "weight_lift":
+            workout = Workout(name, repetition, workout_type, workout_id)
+        elif workout_type == "cardio":
+            workout = Workout(name, )
 
         #Workout is saved in the database
         #workout id links it to a certain user
-        pass
 
     def create_cardio_workout(self):
         #cardio = Workout
