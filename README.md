@@ -27,7 +27,7 @@ Application can be started by running *main.py* file, it is located in the src-d
 
 Ways to run the *main.py* file:
 
-- go to *workout_diary* -directory in a command shell or command prompt and type: **poetry run invoke start**
+- go to *workout_diary* -directory in a command shell or command prompt and type: **poetry install** and then **poetry run invoke start**
 
 OR
 
