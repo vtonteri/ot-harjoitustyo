@@ -1,26 +1,47 @@
-# **Ohjelmistotekniikka, harjoitustyö**
-## **Tehtävät**
+# **Workout Diary**
 
-### **Viikko 1:**
+One can create, save and follow a workout. Multiple users can use the application, with their own workouts.  
 
-**[gitlog.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)**
+## **Notification about Python versions**
 
-**[komentorivi.txt](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)**
+Application is tested with Python 3.9.7. There might be some problems especially with older Python versions.
 
-### **Viikko 2:**
+## **Documentation**
 
-**[Coverage_Report.png](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko2/unicafe/Coverage_Report.png)**
+**[Workout Diary Manual](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/manual.md)**
 
-**[Tuntikirjanpito](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/tuntikirjanpito.md)**
+**[Requirements specification](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/vaatimusmaarittely.md)**
 
-**[Vaatimusmäärittely](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/vaatimusmaarittely.md)**
+**[Testing document, still under construction](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/testing_document.md)**
 
-### **Viikko 3:**
-
-**[Monopoli-luokkakaavio](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko3/MonopolyClass.jpg)**
-
-**[Monopoli-luokkakaavio, laajempi](https://github.com/vtonteri/ot-harjoitustyo/blob/main/laskarit/viikko3/MonopolyClassWide.jpg)**
+**[Working diary](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/tuntikirjanpito.md)**
 
 **[Changelog](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/changelog.md)**
 
-**[Workout Diary Manual](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/manual.md)**
+
+# **Workout diary manual**
+
+## **How to start the application**
+
+Application can be started by running *main.py* file, it is located in the src-directory's root.
+
+Ways to run the *main.py* file:
+
+- go to *workout_diary* -directory in a command shell or command prompt and type: **poetry run invoke start**
+
+OR
+
+- go to *workout_diary/src* -directory in a command shell or command prompt and type: **python3 main.py**
+
+## **What the application does?**
+
+At the moment application opens only a window, and tells user interesting information.
+
+## **How to stop the application**
+
+You can press *Stop application* button or just close the window.
+
+## **How to run tests**
+
+Tests can be run in the following way: 
+- go to *workout_diary* -directory in a command shell or command prompt and type: **poetry run invoke test**
