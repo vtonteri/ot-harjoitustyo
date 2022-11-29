@@ -8,4 +8,5 @@
 | 17.11. | 1 | Ohjelmarungon koodaus |
 | 18.11. | 2 | Ohjelmarungon koodaus |
 | 22.11. | 4 | Testien kirjoittaminen, UI-toiminnallisuuden toteuttamisen aloittaminen |
-| Yht | 9 |  |
+| 29.11. | 8 | Tietokantatoiminnallisuuden aloittaminen, UI-toiminnallisuuden jatkaminen|
+| Yht | 17 |  |
