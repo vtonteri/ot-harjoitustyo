@@ -49,8 +49,8 @@ class UI:
 
 
     def _create_user_window(self):
-        self._current_view = NewUserWindow(self._root)
-        self._current_view.pack()
+        #self._current_view = NewUserWindow(self._root)
+        #self._current_view.pack()
         pass
 
     def _main_window(self):
