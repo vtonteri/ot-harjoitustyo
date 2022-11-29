@@ -9,5 +9,9 @@
     - Ui: Main window
     - Tests: service_test 
 
+## **Week 4:**
 
-
+- Created repository classes for creating databases for User
+- Created 
+    - Login window
+    - Create new user window
