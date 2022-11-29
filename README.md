@@ -1,6 +1,8 @@
 # **Workout Diary**
 
-One can create, save and follow a workout. Multiple users can use the application, with their own workouts.  
+One can create, save and follow a workout. Multiple users can use the application, with their own workouts.
+
+At the moment users can not log in or new users can not be created.
 
 ## **Notification about Python versions**
 

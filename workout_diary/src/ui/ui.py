@@ -47,11 +47,13 @@ class UI:
 
         self._root.grid_columnconfigure(1, weight = 1)
 
+    def _handle_new_user(self):
+        print("Class creates new user")
 
     def _create_user_window(self):
-        #self._current_view = NewUserWindow(self._root)
+        self._current_view = NewUserWindow(self._root, self._handle_new_user)
         #self._current_view.pack()
-        pass
+
 
     def _main_window(self):
 

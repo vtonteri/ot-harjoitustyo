@@ -6,7 +6,6 @@ from services.workout_service import WorkoutService
 
 def main():
     UI.start()
-    
 
 
 if __name__ == "__main__":

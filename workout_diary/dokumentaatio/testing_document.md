@@ -1,3 +1,5 @@
 # Testing document
 
-Still under construction. Will be updated.
+Tests are written only for next class:
+
+- workout_service.py

@@ -14,7 +14,7 @@ OR
 
 ## **What the application does?**
 
-At the moment application opens only a window, and tells user interesting information.
+At the moment application opens login window, but user can not log in or create new user.
 
 ## **How to stop the application**
 
