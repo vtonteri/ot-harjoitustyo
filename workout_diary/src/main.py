@@ -3,6 +3,7 @@ from entities.user import User
 from entities.workout import Workout
 from services.workout_service import WorkoutService
 
+
 def main():
     Ui.main_window()
 

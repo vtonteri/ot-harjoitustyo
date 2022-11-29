@@ -1,8 +1,9 @@
 from entities.user import User
 
+
 class Workout:
     """Class for a one workout object. 
-    
+
     Attributes: 
         - Workout name
         - Workout repetition
@@ -25,10 +26,11 @@ class Workout:
                 - Anaerobic
                 - VO2 Maximum    
     """
-    def __init__(self, name: str, repetition: bool, workout_type: str, workout_id:None):
+
+    def __init__(self, name: str, repetition: bool, workout_type: str, workout_id: None):
 
         self.workout_name = name
-        self.workout_repetition = repetition #Weekly: True, Monthly: False
+        self.workout_repetition = repetition  # Weekly: True, Monthly: False
         self.workout_type = workout_type
         self.workout_details_weight_lifting = {}
         self.workout_sets_weight_lifting = {}
@@ -37,6 +39,3 @@ class Workout:
 
     def add_weight_lifting_set(self, name, repetitions, weight):
         self.workout_sets_weight_lifting[name] = (repetitions, weight)
-
-
-

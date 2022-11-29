@@ -4,6 +4,7 @@ from services.workout_service import WorkoutService
 from entities.user import User
 from entities.workout import Workout
 
+
 class TestWorkoutService(unittest.TestCase):
     def setUp(self):
         self.workout = WorkoutService()
@@ -16,4 +17,5 @@ class TestWorkoutService(unittest.TestCase):
 
     def test_add_weight_lifting_set(self):
         self.workout.add_weight_lifting_set("penkkipunnerrus", 3, 80)
-        self.assertEqual(self.workout.workout_sets_weight_lifting["penkkipunnerrus"], (3, 80))
+        self.assertEqual(
+            self.workout.workout_sets_weight_lifting["penkkipunnerrus"], (3, 80))
