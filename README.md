@@ -18,6 +18,8 @@ Application is tested with Python 3.9.7. There might be some problems especially
 
 **[Changelog](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/changelog.md)**
 
+**[Architecture](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/architecture.md)**
+
 
 # **Workout diary manual**
 
