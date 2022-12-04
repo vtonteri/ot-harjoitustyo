@@ -37,6 +37,12 @@ OR
 
 - go to *workout_diary/src* -directory in a command shell or command prompt and type: **python3 main.py**
 
+## **Python libraries used**
+
+Application uses next libraries, that needs to be installed before:
+- *tkcalendar*: type to command prompt **pip install tkcalendar**
+- *bcrypt*: type to command prompt **pip install bcrypt**
+
 ## **What the application does?**
 
 At the moment application opens only a window, and tells user interesting information.
