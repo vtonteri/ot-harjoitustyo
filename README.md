@@ -2,7 +2,7 @@
 
 One can create, save and follow a workout. Multiple users can use the application, with their own workouts.
 
-At the moment users can not log in or new users can not be created.
+At the moment there is no connection to database, so the users can not be created.
 
 ## **Notification about Python versions**
 
