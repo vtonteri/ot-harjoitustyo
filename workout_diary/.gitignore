@@ -3,3 +3,4 @@
 .pytest_cache
 htmlcov
 __pycache__
+workout_diary_workspace.code-workspace

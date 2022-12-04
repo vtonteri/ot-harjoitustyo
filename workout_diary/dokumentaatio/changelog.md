@@ -15,3 +15,9 @@
 - Created 
     - Login window
     - Create new user window
+
+## **Week5**
+
+- Created main window with calendar (implemented tkcalendar)
+- Created create new user window
+- bcypt-library implemented for hashing password

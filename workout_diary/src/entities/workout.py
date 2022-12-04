@@ -39,3 +39,7 @@ class Workout:
 
     def add_weight_lifting_set(self, name, repetitions, weight):
         self.workout_sets_weight_lifting[name] = (repetitions, weight)
+
+
+if __name__ == "__main__":
+    treeni = Workout("pena", True, "weight_lift")

@@ -1,5 +1,4 @@
 from tkinter import Tk, ttk, constants
-from repositories.user_repository import UserRepository
 from ui.new_user_window import NewUserWindow
 
 class UI:

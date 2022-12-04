@@ -1,12 +1,13 @@
-from ui.ui import UI
-from entities.user import User
-from entities.workout import Workout
-from services.workout_service import WorkoutService
+from ui.ui_final import UI
+from tkinter import Tk
 
 
 def main():
-    UI.start()
-
+    window = Tk()
+    ui = UI(window)
+    ui.start_login()
+    window.title("WORKOUT DIARY")
+    window.mainloop()
 
 if __name__ == "__main__":
     main()

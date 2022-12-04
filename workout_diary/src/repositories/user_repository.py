@@ -30,7 +30,7 @@ class UserRepository:
         cursor = self._connection.cursor()
 
         cursor.execute(
-            "inserti into users (username, password) values (?, ?)",
+            "insert into users (username, password) values (?, ?)",
             (user.username, user.password)
         )
         self._connection.commit()
@@ -43,3 +43,6 @@ class UserRepository:
         pass
 
 
+if __name__ == "__main__":
+    kayttaja = User()
+    UserRepository.create(kayttaja)
