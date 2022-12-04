@@ -22,7 +22,6 @@ Application is tested with Python 3.9.7. There might be some problems especially
 
 **[Architecture](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/architecture.md)**
 
-
 # **Workout diary manual**
 
 ## **How to start the application**
