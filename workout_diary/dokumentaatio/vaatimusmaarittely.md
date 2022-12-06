@@ -19,11 +19,11 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
 
 ## Ennen kirjautumista
 
-- Käyttäjä voi luoda itselleen käyttäjätunnuksen ja salasanan
+- Käyttäjä voi luoda itselleen käyttäjätunnuksen ja salasanan (Ikkuna ja toiminnallisuus toteutettu, tietokantayhteys puuttuu)
     - Profiili tallennetaan tietokantaan ja käyttäjätunnuksen tulee olla uniikki. Käyttäjätunnuksen pitää olla vähintään viisi merkkiä pitkä, eikä se saa sisältää ääkkösiä tai erikoismerkkejä.
 - Pääkäyttäjälle on luotu erilliset tunnukset, joiden avulla pääkäyttäjä pääsee näkemään kaikkien käyttäjien profiilitiedot sekä tallennetut harjoitusohjelmat
 
-- Käyttäjä voi kirjautua järjestelmään
+- Käyttäjä voi kirjautua järjestelmään (Ikkuna ja toiminnallisuus toteutettu, tietokantayhteys puuttuu)
     - Kirjautuminen tapahtuu ohjelman käynnistämisen jälkeen avautuvassa kirjautumisikkunassa
     - Pääkäyttäjä kirjautuu järjestelmään samaa toiminnallisuutta käyttäen
     - Jos salasana tai käyttäjätunnus ovat virheelliset, tai käyttäjätunnusta ei ole luotu, ilmoittaa ohjelma tästä ja palaa takaisin kirjautumisikkunaan
@@ -32,9 +32,9 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
 
 - Avautuvassa näkymässä näytetään yksityiskohtainen näkymä meneillään olevasta päivästä sekä joko viikko- tai kuukausinäkymä
     - Meneillään olevan päivän yksityiskohtainen näkymä on sijoitettu avautuneen ikkunan yläosaan
-    - Viikko- tai kuukausinäkymä on sijoitettu avautuneen ikkunan alaosaan
+    - Viikko- tai kuukausinäkymä on sijoitettu avautuneen ikkunan alaosaan (toteutettu)
     - Viikko- tai kuukausinäkymä voidaan valita avautuneen ikkunan alaosassa olevasta valintapainikkeesta
-- Uuden harjoitusohjelman lisääminen tapahtuu "Add" -painiketta painamalla
+- Uuden harjoitusohjelman lisääminen tapahtuu "Add" -painiketta painamalla (Ikkuna toteutettu)
     - Uusi harjoitusohjelma sisältää seuraavat tiedot:
         - Harjoituksen nimi (merkkijono, vapaasti kirjoitettavissa)
         - Harjoituksen toistuvuus
