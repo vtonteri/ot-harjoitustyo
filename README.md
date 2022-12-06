@@ -54,3 +54,7 @@ You can press *Stop application* button or just close the window.
 
 Tests can be run in the following way: 
 - go to *workout_diary* -directory in a command shell or command prompt and type: **poetry run invoke test**
+
+## **Releases**
+
+**[Release, week 5](https://github.com/vtonteri/ot-harjoitustyo/releases/tag/viikko5)**
