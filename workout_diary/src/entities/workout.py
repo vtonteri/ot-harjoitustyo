@@ -38,6 +38,7 @@ class Workout:
         self.workout_id = workout_id
 
     def add_weight_lifting_set(self, name, repetitions, weight):
+        "Method adds new set for a wight lift workout"
         self.workout_sets_weight_lifting[name] = (repetitions, weight)
 
 

@@ -1,6 +1,6 @@
 from ui.ui_final import UI
 from tkinter import Tk
-
+from initialize_database import initialize_database
 
 def main():
     window = Tk()
@@ -10,4 +10,5 @@ def main():
     window.mainloop()
 
 if __name__ == "__main__":
+    initialize_database()
     main()

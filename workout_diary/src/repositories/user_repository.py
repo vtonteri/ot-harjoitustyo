@@ -18,6 +18,9 @@ class UserRepository:
         self._connection = connection
 
     def find_all(self):
+        "Method returns all users as a list from the database"
+
+
         cursor = self._connection.cursor()
 
         cursor.execute("select * from users")
@@ -27,6 +30,7 @@ class UserRepository:
         return list(map(get_user_by_row, rows))
 
     def create(self, user):
+        "Method creates new user to the database"
         cursor = self._connection.cursor()
 
         cursor.execute(
@@ -39,10 +43,6 @@ class UserRepository:
 
     def _read(self):
         users = []
-
         pass
 
-
-if __name__ == "__main__":
-    kayttaja = User()
-    UserRepository.create(kayttaja)
+user_repository = UserRepository(get_database_connection())

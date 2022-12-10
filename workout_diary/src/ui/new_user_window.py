@@ -1,5 +1,7 @@
 from tkinter import ttk, constants
 from entities.user import User
+from services.user_service import UserService
+from repositories.user_repository import UserRepository
 import bcrypt
 
 class NewUserWindow:
@@ -56,13 +58,10 @@ class NewUserWindow:
         self._new_password_hashed = bcrypt.hashpw(self._new_password, bcrypt.gensalt(10))
     
     def _handle_create_new_user(self):
-        self._new_password = self._new_password.get()
-        self._new_username = self._new_username.get()
-
-        self._hash_password()
-        new_user = User(self._new_username, self._new_password_hashed)
-        print(new_user)
-        
+        print(f"{self._new_username.get()} {self._new_password.get()} username password")
+        user_name_to_database = self._new_username.get()
+        password_to_database = self._new_password.get()
+        UserService.create_user(self, user_name_to_database, password_to_database)       
         
 
 
