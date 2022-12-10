@@ -1,7 +1,7 @@
 from tkinter import ttk, constants
 from entities.user import User
-from services.user_service import UserService
-from repositories.user_repository import UserRepository
+from services.user_service import user_service
+from repositories.user_repository import user_repository
 import bcrypt
 
 class NewUserWindow:
@@ -53,15 +53,17 @@ class NewUserWindow:
 
         self._frame.grid_columnconfigure(1, weight = 1, minsize=400)
 
-    def _hash_password(self):
-        self._new_password = str(self._new_password).encode('utf-8')
-        self._new_password_hashed = bcrypt.hashpw(self._new_password, bcrypt.gensalt(10))
+    def _hash_password(self, plain_password):
+        plain_password = str(plain_password).encode('utf-8')
+        return bcrypt.hashpw(plain_password, bcrypt.gensalt(10))
     
     def _handle_create_new_user(self):
-        print(f"{self._new_username.get()} {self._new_password.get()} username password")
-        user_name_to_database = self._new_username.get()
+
+        username_to_database = self._new_username.get()
         password_to_database = self._new_password.get()
-        UserService.create_user(self, user_name_to_database, password_to_database)       
+        password_to_database_hashed = self._hash_password(password_to_database)
+        print(password_to_database_hashed)
+        user_service.create_user(username_to_database, password_to_database_hashed)       
         
 
 

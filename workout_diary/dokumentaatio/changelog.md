@@ -21,3 +21,8 @@
 - Created main window with calendar (implemented tkcalendar)
 - Created create new user window
 - bcypt-library implemented for hashing password
+
+## **Week6**
+
+- Implemented databaseconnection
+- New user can be created, new user is saved in the database
