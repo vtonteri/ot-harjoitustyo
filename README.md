@@ -44,7 +44,7 @@ Application uses next libraries, that needs to be installed before:
 
 ## **What the application does?**
 
-At the moment application opens only a window, and tells user interesting information.
+User can create own profile and log in (at the moment logging in doesn't work)
 
 ## **How to stop the application**
 
@@ -58,3 +58,4 @@ Tests can be run in the following way:
 ## **Releases**
 
 **[Release, week 5](https://github.com/vtonteri/ot-harjoitustyo/releases/tag/viikko5)**
+**[Release, week 6](https://github.com/vtonteri/ot-harjoitustyo/releases/tag/Viikko6)**
