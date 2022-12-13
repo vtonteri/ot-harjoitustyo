@@ -1,5 +1,5 @@
 from tkinter import ttk, constants, StringVar
-from services.user_service import user_service
+from services.user_service import user_service, InvalidCredentialsError
 from entities.user import User
 
 class LoginWindow:
@@ -81,15 +81,15 @@ class LoginWindow:
         self._hide_error()
 
     def _handle_login_user(self):
-        
+
         self._login_username = self._username_entry.get()
         self._login_password = self._password_entry.get()
 
         try:
             user_service.login_user(self._login_username, self._login_password)
-            self._show_main_view
-        except:
-            self._show_error("Invalid username or password")
+            self._show_main_view()
+        except (InvalidCredentialsError):
+            self._show_error("Invalid username or password222")
 
     def _show_error(self, message):
         self._error_message.set(message)
