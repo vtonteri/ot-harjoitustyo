@@ -13,4 +13,10 @@
 | 2.12. | 7 | Create new user, Main window, Login window sekä Ui koodaus |
 | 3.12. | 4 | Create new user, Main window, Login window sekä Ui koodaus |
 | 4.12. | 1 | Create new user koodaus |
-| Yht | 36 |  |
+| 8.12. | 4 | Tietokannan koodaus, user repository |
+| 9.12. | 4 | Tietokannan koodaus, user repository, user service muokkaus |
+| 10.12. | 4 | Tietokannan koodaus, user repository |
+| 11.12. | 1 | User repository toimii |
+| 12.12. | 5 | Login toiminnallisuuden koodaus |
+| 13.12. | 4 | Workout taulun luonti, workout repository koodaus |
+| Yht | 58 |  |

@@ -8,6 +8,7 @@ class MainWindow:
         self._handle_exit = handle_exit
         self._handle_create_new_workout = handle_new_workout
         self._frame = None
+        self._user = None
 
         self._initialize()
 
@@ -60,3 +61,6 @@ class MainWindow:
         self._workout_calendar.grid(row=7, column=0, columnspan=2, padx=5, pady=5)
 
         self._frame.grid_columnconfigure(1, weight = 1, minsize=400)
+
+        def _handle_create_new_workout(self):
+            pass

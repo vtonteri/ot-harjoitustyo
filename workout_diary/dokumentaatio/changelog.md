@@ -24,5 +24,12 @@
 
 ## **Week6**
 
-- Implemented databaseconnection
+- Implemented database connection
 - New user can be created, new user is saved in the database
+- Implemented new database table "workout"
+- New workouts can be created
+- Implemented new tests
+    - User_repository
+    - workout_service
+
+

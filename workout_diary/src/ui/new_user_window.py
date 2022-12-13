@@ -11,6 +11,8 @@ class NewUserWindow:
         self._frame = None
         self._new_password = None
         self._new_username = None
+        self._error_message = None
+        self._error_label = None
 
         self._initialize()
 
@@ -21,7 +23,10 @@ class NewUserWindow:
         self._frame.destroy()
 
     def _initialize(self):
-        self._frame = ttk.Frame(master=self._root)
+        "Method initilalizes Create New User window"
+
+
+        self._frame = ttk.Frame(master=self._root) 
         label = ttk.Label(master=self._frame, text="Create New User")
         
         username_label = ttk.Label(master=self._frame, text="Enter new username:")
@@ -30,6 +35,7 @@ class NewUserWindow:
         password_label = ttk.Label(master=self._frame, text="Enter password:")
         self._new_password = ttk.Entry(master=self._frame)
 
+        "When button is pressed and "
         create_user_button = ttk.Button(
             master=self._frame,
             text="Create new user",
@@ -53,17 +59,28 @@ class NewUserWindow:
 
         self._frame.grid_columnconfigure(1, weight = 1, minsize=400)
 
-    def _hash_password(self, plain_password):
-        plain_password = str(plain_password).encode('utf-8')
-        return bcrypt.hashpw(plain_password, bcrypt.gensalt(10))
+    def _hash_password(self, _plain_password):
+        _plain_password = str(_plain_password).encode('utf-8')
+        return bcrypt.hashpw(_plain_password, bcrypt.gensalt(10))
     
     def _handle_create_new_user(self):
 
-        username_to_database = self._new_username.get()
-        password_to_database = self._new_password.get()
-        password_to_database_hashed = self._hash_password(password_to_database)
-        print(password_to_database_hashed)
-        user_service.create_user(username_to_database, password_to_database_hashed)       
+        _username_to_database = self._new_username.get()
+        _password_to_database = self._new_password.get()
+        _username_exist = user_repository.check_if_username_exist(_username_to_database)
+
+        if _username_exist == False:
+
+            password_to_database_hashed = user_service.hash_password(_password_to_database)
+            print(password_to_database_hashed)
+            #user_service.create_user(_username_to_database, password_to_database_hashed)
+            user_service.create_user(_username_to_database, _password_to_database)
+        
+        elif _username_exist == True:
+            print("Username already in use, choose another.")
+
+
+
         
 
 

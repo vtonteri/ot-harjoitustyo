@@ -16,7 +16,7 @@ class User:
 
     def __str__(self):
         "Method returns User's information as str"
-        return f"Username: {self.username}, password (hashed): {self.password}"
+        return f"{self.username}, {self.password}"
 
     def username(self):
         "Method returns Users username as str"

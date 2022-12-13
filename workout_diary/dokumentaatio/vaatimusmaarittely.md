@@ -19,11 +19,11 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
 
 ## Ennen kirjautumista
 
-- Käyttäjä voi luoda itselleen käyttäjätunnuksen ja salasanan (Ikkuna ja toiminnallisuus toteutettu, tietokantayhteys puuttuu)
-    - Profiili tallennetaan tietokantaan ja käyttäjätunnuksen tulee olla uniikki. Käyttäjätunnuksen pitää olla vähintään viisi merkkiä pitkä, eikä se saa sisältää ääkkösiä tai erikoismerkkejä.
-- Pääkäyttäjälle on luotu erilliset tunnukset, joiden avulla pääkäyttäjä pääsee näkemään kaikkien käyttäjien profiilitiedot sekä tallennetut harjoitusohjelmat
+- Käyttäjä voi luoda itselleen käyttäjätunnuksen ja salasanan (Toteutettu)
+    - Profiili tallennetaan tietokantaan ja käyttäjätunnuksen tulee olla uniikki. Käyttäjätunnuksen pitää olla vähintään viisi merkkiä pitkä, eikä se saa sisältää ääkkösiä tai erikoismerkkejä. (ei toteutettu)
+- Pääkäyttäjälle on luotu erilliset tunnukset, joiden avulla pääkäyttäjä pääsee näkemään kaikkien käyttäjien profiilitiedot sekä tallennetut harjoitusohjelmat (ei toteutettu)
 
-- Käyttäjä voi kirjautua järjestelmään (Ikkuna ja toiminnallisuus toteutettu, tietokantayhteys puuttuu)
+- Käyttäjä voi kirjautua järjestelmään (Toiminto toteutettu)
     - Kirjautuminen tapahtuu ohjelman käynnistämisen jälkeen avautuvassa kirjautumisikkunassa
     - Pääkäyttäjä kirjautuu järjestelmään samaa toiminnallisuutta käyttäen
     - Jos salasana tai käyttäjätunnus ovat virheelliset, tai käyttäjätunnusta ei ole luotu, ilmoittaa ohjelma tästä ja palaa takaisin kirjautumisikkunaan
@@ -34,7 +34,7 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
     - Meneillään olevan päivän yksityiskohtainen näkymä on sijoitettu avautuneen ikkunan yläosaan
     - Viikko- tai kuukausinäkymä on sijoitettu avautuneen ikkunan alaosaan (toteutettu)
     - Viikko- tai kuukausinäkymä voidaan valita avautuneen ikkunan alaosassa olevasta valintapainikkeesta
-- Uuden harjoitusohjelman lisääminen tapahtuu "Add" -painiketta painamalla (Ikkuna toteutettu)
+- Uuden harjoitusohjelman lisääminen tapahtuu "Add" -painiketta painamalla (Ikkuna ja toiminnallisuus toteutettu, pitää implementoida UI:hin)
     - Uusi harjoitusohjelma sisältää seuraavat tiedot:
         - Harjoituksen nimi (merkkijono, vapaasti kirjoitettavissa)
         - Harjoituksen toistuvuus
@@ -62,15 +62,15 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
                 - Harjoituksen tyyppi (Running, Cycling, Swimming, Walking etc.)
                 - Harjoituksen kesto (HH:MM)
                 - Sykealue (BPM)
-- Harjoitusohjelman muokkaaminen:
+- Harjoitusohjelman muokkaaminen: (ei toteutettu)
     - Harjoitusohjelman saa auki valitsemalla aloitusnäkymässä näkyvistä harjoituksista niiden tiedot
     - Avautuvasta ikkunasta voidaan muokata harjoituksen tietoja
 
-- Harjoitusohjelman toteutuminen
+- Harjoitusohjelman toteutuminen (ei toteutettu)
     - Avautuvasta ikkunasta voidaan valita toteutuiko päivän harjoitus suunnitellusti
     - Mikäli muutoksia harjoituksen sisältöön, voidaan valita "Edit", jonka jälkeen muutokset voidaan kirjata harjoituksen kohdalle
 
-- Lopuksi käyttäjä voi kirjautua ulos ohjelmasta
+- Lopuksi käyttäjä voi kirjautua ulos ohjelmasta (toteutettu)
 
 # **Jatkokehitysideoita**
 

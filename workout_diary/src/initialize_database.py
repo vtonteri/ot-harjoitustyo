@@ -9,13 +9,38 @@ def drop_tables(connection):
 
     connection.commit()
 
+    cursor.execute('''
+        drop table if exists workouts;
+        ''')
+
+    connection.commit()
+
 def create_tables(connection):
+    """
+    Two tables are created to the database: users and workout
+    User and workout are connected together using username as a foreign key in the workout
+    """
     cursor = connection.cursor()
 
     cursor.execute('''
         create table users  (
             username text primary key,
             password text
+            );
+    ''')
+
+    connection.commit()
+
+    cursor.execute('''
+        create table workouts   (
+            workout text primary key,
+            user text,
+            date_and_time text,
+            repetition text,
+            type text,
+            sets text,
+            details text,
+            foreign key (user) references users (username)
             );
     ''')
 

@@ -1,24 +1,22 @@
 from entities.user import User
 from entities.workout import Workout
+import datetime
+from repositories.workout_repository import (
+    workout_repository as default_workout_repository)
 
 
 class WorkoutService:
 
-    def __init__(self) -> None:
-        pass
+    def __init__(self, workout_repository = default_workout_repository) -> None:
+        self.new_workout = None
+        self._workout_repository = workout_repository
 
     def __str__(self) -> str:
         pass
 
-    def create_workout(self, name: str, repetition: bool, workout_type: str, workout_id: None):
+    def create_workout(self, name: str, user: User, date_and_time: datetime.date, repetition: bool, workout_type: bool, sets: str, details: str):
+        self.new_workout = self._workout_repository.create_workout(Workout(name, user, date_and_time, repetition, workout_type, sets, details))
 
-        if workout_type == "weight_lift":
-            self.workout = Workout(name, repetition, workout_type, workout_id)
-        elif workout_type == "cardio":
-            self.workout = Workout(name, )
-
-        # Workout is saved in the database
-        # workout id links it to a certain user
 
     def create_cardio_workout(self):
         #cardio = Workout

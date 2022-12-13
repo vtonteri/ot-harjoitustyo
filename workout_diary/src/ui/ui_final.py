@@ -69,7 +69,7 @@ class UI:
         self._current_view = MainWindow(
             self._root,
             self._handle_exit_main_window,
-            self._show_create_new_workout
+            self._show_create_new_workout,
         )
         self._current_view.pack()
 
