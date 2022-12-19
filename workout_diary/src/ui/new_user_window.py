@@ -58,11 +58,7 @@ class NewUserWindow:
         exit_button.grid(row=5, column=1, columnspan=2, padx=5, pady= 5)
 
         self._frame.grid_columnconfigure(1, weight = 1, minsize=400)
-
-    def _hash_password(self, _plain_password):
-        _plain_password = str(_plain_password).encode('utf-8')
-        return bcrypt.hashpw(_plain_password, bcrypt.gensalt(10))
-    
+   
     def _handle_create_new_user(self):
 
         _username_to_database = self._new_username.get()
@@ -72,9 +68,7 @@ class NewUserWindow:
         if _username_exist == False:
 
             password_to_database_hashed = user_service.hash_password(_password_to_database)
-            print(password_to_database_hashed)
-            #user_service.create_user(_username_to_database, password_to_database_hashed)
-            user_service.create_user(_username_to_database, _password_to_database)
+            user_service.create_user(_username_to_database, password_to_database_hashed)
         
         elif _username_exist == True:
             print("Username already in use, choose another.")

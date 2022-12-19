@@ -89,12 +89,9 @@ class LoginWindow:
             user_service.login_user(self._login_username, self._login_password)
             self._show_main_view()
         except (InvalidCredentialsError):
-            self._show_error("Invalid username or password222")
+            self._show_error("Invalid username or password")
 
     def _show_error(self, message):
         self._error_message.set(message)
         self._error_label.grid()
-
-        #user_logged_in = user_service.login_user(self._login_username, self._login_password_hashed)
-        #user_logged_in = user_service.login_user(self._login_username, self._login_password)
         

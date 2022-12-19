@@ -2,7 +2,7 @@ from tkinter import Tk, ttk, constants
 from ui.login_window import LoginWindow
 from ui.new_user_window import NewUserWindow
 from ui.main_window import MainWindow
-from ui.new_workout import CreateNewWorkout
+from ui.new_workout_window import CreateNewWorkoutWindow
 
 class UI:
     def __init__(self, root) -> None:
@@ -75,7 +75,8 @@ class UI:
 
     def _show_create_new_workout(self):
         self._hide_current_view()
-        self._current_view = CreateNewWorkout(
+        self._current_view = CreateNewWorkoutWindow(
             self._root,
             self._handle_exit_create_workout
         )
+        self._current_view.pack()

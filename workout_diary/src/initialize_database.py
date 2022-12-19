@@ -9,7 +9,9 @@ def drop_tables(connection):
 
     connection.commit()
 
-    cursor.execute('''
+    cursor_workout = connection.cursor()
+
+    cursor_workout.execute('''
         drop table if exists workouts;
         ''')
 
@@ -31,16 +33,18 @@ def create_tables(connection):
 
     connection.commit()
 
-    cursor.execute('''
+    cursor_workout = connection.cursor()
+    
+    cursor_workout.execute('''
         create table workouts   (
-            workout text primary key,
-            user text,
+            workout_id integer primary key,
+            username text,
+            workout text,
             date_and_time text,
             repetition text,
             type text,
             sets text,
-            details text,
-            foreign key (user) references users (username)
+            details text
             );
     ''')
 

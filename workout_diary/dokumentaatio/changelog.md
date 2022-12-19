@@ -32,4 +32,14 @@
     - User_repository
     - workout_service
 
+## **Week7**
 
+- Login user works
+    - User and password check works
+- Create new workout
+    - Workouts primary key (workout id) is random integer between 1 - 20000
+    - Window
+    - Workout repository
+    - Create new workout to database table = workouts
+- Fetching and displaying logged in users workouts
+    

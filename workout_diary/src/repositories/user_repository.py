@@ -45,7 +45,7 @@ class UserRepository:
 
         try:
             if cursor.execute("SELECT username FROM users WHERE username = %(username)s, (username,)") == username:
-                return True
+                return username
 
         except:
             return False
@@ -56,8 +56,6 @@ class UserRepository:
         cursor.execute("SELECT * FROM users where username = ?", (username,))
 
         row = cursor.fetchone()
-
-        print(f"get user by row: {get_user_by_row(row)}")
 
         return get_user_by_row(row)
 

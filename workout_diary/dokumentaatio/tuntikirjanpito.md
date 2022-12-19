@@ -19,4 +19,10 @@
 | 11.12. | 1 | User repository toimii |
 | 12.12. | 5 | Login toiminnallisuuden koodaus |
 | 13.12. | 4 | Workout taulun luonti, workout repository koodaus |
-| Yht | 58 |  |
+| 14.12. | 3 | Workout-olion vieminen tietokantaan |
+| 15.12. | 1 | Workout-repositorion ja service koodailu |
+| 16.12. | 1 | Workout-repositorion ja service koodailu |
+| 17.12. | 3 | Workout-repositorion ja service koodailu |
+| 18.12. | 1 | Workout-repositorion ja service koodailu |
+| 19.12. | 3 | Workout-repositorion ja service koodailu, new workout window viimeistely |
+| Yht | 70 |  |
