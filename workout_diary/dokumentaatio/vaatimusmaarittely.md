@@ -13,15 +13,19 @@ Sovelluksessa on seuraavat käyttäjäprofiilit:
 ## Käyttöliittymä
 
 Kirjautumisikkuna:
+
 ![Käyttöliittymä, kirjautumisikkuna](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/kirjautumisikkuna.jpg)
 
 Luo uusi käyttäjä -ikkuna
+
 ![Käyttöliittymä, luo uusi käyttäjä -ikkuna](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/luo_uusi_kayttaja.jpg)
 
 Päänäkymä:
+
 ![Käyttöliittymä, päänäkymä](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/paanakyma.jpg)
 
 Luo uusi harjoitusohjelma -ikkuna
+
 ![Käyttöliittymä, luo harjoitusohjelma -ikkuna](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/luo_harjoitusohjelma.jpg)
 
 # Perusversion tarjoama toiminnallisuus
