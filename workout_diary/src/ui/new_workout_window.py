@@ -33,9 +33,9 @@ class CreateNewWorkoutWindow:
         date_and_time = ttk.Label(master=self._frame, text="Choose date: ")
         self._date_and_time = DateEntry(master=self._frame)
 
-        repetition = ttk.Label(master=self._frame, text="Workout repetition: ")
+        repetition = ttk.Label(master=self._frame, text="Workout repetition (Weekly: workout will be added to next 3 weeks): ")
         self._repetition_menu = StringVar()
-        self._repetition = OptionMenu(self._frame, self._repetition_menu, "Weekly", "Monthly")
+        self._repetition = OptionMenu(self._frame, self._repetition_menu, "Weekly", "None")
 
         workout_type = ttk.Label(master=self._frame, text="Workout type: ")
         self._workout_type_menu = StringVar()
@@ -96,14 +96,21 @@ class CreateNewWorkoutWindow:
         workout_sets_to_database = self._workout_sets.get()
         workout_details_to_database = self._workout_details.get()
 
-        if workout_repetition_to_database == "weekly":
-            workout_repetition_to_database = True
-        elif workout_repetition_to_database == "monthly":
-            workout_repetition_to_database = False
+        if workout_repetition_to_database == "Weekly":
+            for i in range(3):
+                workout_service.create_workout(workout_name_to_database, workout_username_to_database, workout_date_to_database, 
+                workout_repetition_to_database, workout_type_to_database, workout_sets_to_database, workout_details_to_database)
+
+                workout_date_to_database = workout_date_to_database + datetime.timedelta(days=7)
+
+        elif workout_repetition_to_database == "None":
+            workout_service.create_workout(workout_name_to_database, workout_username_to_database, workout_date_to_database, 
+            workout_repetition_to_database, workout_type_to_database, workout_sets_to_database, workout_details_to_database)
+
+        self._workout_name.delete(0, "end")
+        self._workout_sets.delete(0, "end")
+        self._workout_details.delete(0, "end")
 
         print(f"{workout_name_to_database} {workout_username_to_database} {workout_date_to_database} {workout_repetition_to_database} {workout_type_to_database} {workout_sets_to_database} {workout_details_to_database}")
 
-        workout_service.create_workout(workout_name_to_database, workout_username_to_database, workout_date_to_database, 
-        workout_repetition_to_database, workout_type_to_database, workout_sets_to_database, workout_details_to_database)
-
-
+        

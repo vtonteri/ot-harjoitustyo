@@ -11,7 +11,7 @@ class MainWindow:
         self._handle_create_new_workout = handle_new_workout
         self._frame = None
         self._username = user_service.get_logged_in_username()
-        self.dates = ["Select date"]
+        self.dates = ["YYYY-MM-DD"]
 
         self._initialize()
 
@@ -71,7 +71,7 @@ class MainWindow:
 
     def _show_workouts_menu_button(self):
         _show_workouts_menu = StringVar(self._frame, "Select date")
-        button_show_workouts = OptionMenu(self._frame, _show_workouts_menu, *self.dates, self._show_workouts)
+        button_show_workouts = OptionMenu(self._frame, _show_workouts_menu, *self.dates, command=self._show_workouts)
         button_show_workouts.grid(row=8, column=1, columnspan=2, padx=5, pady=5)
         
 
@@ -91,10 +91,12 @@ class MainWindow:
         self._show_workouts_menu_button()
 
     def _show_workouts(self, selected_date):
-        self.selected_workout_text_box.insert(self._frame, "PASKAA")
+        self.selected_workout_text_box.delete(1.0, END)
         for i in self.id_s_dates:
-            if i[2] == selected_date:
-                self.selected_workout_text_box.insert(self._frame, "PASKAA")
-        
+            if i[1] == selected_date:
+                self.selected_workout_text_box.insert(END, "Workout name: " + self.workouts_to_calendar[i[0]][1] + "\n")
+                self.selected_workout_text_box.insert(END, "Workout type: " + self.workouts_to_calendar[i[0]][4] + "\n")
+                self.selected_workout_text_box.insert(END, "Workout sets: " + self.workouts_to_calendar[i[0]][5] + "\n")
+                self.selected_workout_text_box.insert(END, "Workout details: " + self.workouts_to_calendar[i[0]][6] + "\n")        
 
 

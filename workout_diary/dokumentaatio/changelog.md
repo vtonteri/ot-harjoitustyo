@@ -41,5 +41,6 @@
     - Window
     - Workout repository
     - Create new workout to database table = workouts
-- Fetching and displaying logged in users workouts
-    
+- Fetching workouts from the database and 
+- Displaying logged in users workouts
+

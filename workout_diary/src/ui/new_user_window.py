@@ -1,4 +1,4 @@
-from tkinter import ttk, constants
+from tkinter import ttk, constants, Tk
 from entities.user import User
 from services.user_service import user_service
 from repositories.user_repository import user_repository
@@ -72,6 +72,9 @@ class NewUserWindow:
         
         elif _username_exist == True:
             print("Username already in use, choose another.")
+
+        self._new_username.delete(0, "end")
+        self._new_password.delete(0, "end")
 
 
 

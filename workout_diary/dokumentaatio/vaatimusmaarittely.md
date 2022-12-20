@@ -52,6 +52,7 @@ Luo uusi harjoitusohjelma -ikkuna
     - Uusi harjoitusohjelma sisältää seuraavat tiedot:
         - Harjoituksen nimi (merkkijono, vapaasti kirjoitettavissa)
         - Harjoituksen toistuvuus (weekly, None)
+            - Mikäli valitaan "Weekly" harjoitusohjelma lisätään valitun päivämäärän lisäksi kahdelle seuraavalle viikolle
         - Harjoituksen tyyppi (Weight lifting / Cardio)
         - Harjoituksen toistot ja toistomäärät (sets)
         - Harjoituksen yksityiskohdat (Workout details):

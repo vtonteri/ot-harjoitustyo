@@ -25,4 +25,5 @@
 | 17.12. | 3 | Workout-repositorion ja service koodailu |
 | 18.12. | 1 | Workout-repositorion ja service koodailu |
 | 19.12. | 3 | Workout-repositorion ja service koodailu, new workout window viimeistely |
-| Yht | 70 |  |
+| 20.12. | 2 | Harjoitusohjelmien näyttäminen käyttäjälle pääikkunassa |
+| Yht | 72 |  |

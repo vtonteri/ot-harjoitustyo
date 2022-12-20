@@ -18,15 +18,9 @@ class WorkoutRepository:
 
     def create_workout_to_database(self, workout):
         """Method creates new workout to the database"""
-        #workout_id, username, workout_name, date_and_time, repetition, workout_type, sets, details
+
         cursor_workout = self._connection.cursor()
 
-        #cursor_workout.execute(
-        #    "insert into workouts (workout_id, username, workout, date_and_time, repetition, type, sets, details) values (?, ?, ?, ?, ?, ?, ?, ?)",
-        #    (int(workout_id), str(username), str(workout_name), str(date_and_time), str(repetition),
-        #    str(sets), str(workout_type), str(details))
-        #)
-        
         cursor_workout.execute(
             "insert into workouts (workout_id, username, workout, date_and_time, repetition, type, sets, details) values (?, ?, ?, ?, ?, ?, ?, ?);",
             (workout.workout_id, workout.username, workout.workout_name,  workout.date_and_time, 
@@ -43,16 +37,6 @@ class WorkoutRepository:
         )
 
         rows = cursor_workout.fetchall()
-
-        #for row in rows:
-        #    print(row[0])
-        #    print(row[1])
-        #    print(row[2])
-        #    print(row[3])
-        #    print(row[4])
-        #    print(row[5])
-        #    print(row[6])
-        #    print(row[7])
 
         return rows
 
