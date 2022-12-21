@@ -1,4 +1,6 @@
-# **Workout diary manual**
+# **Workout diary käyttöohje**
+
+Lataa käyttöösi ohjelman viimeisin [release](https://github.com/vtonteri/ot-harjoitustyo/releases)
 
 ## **How to start the application**
 
@@ -11,12 +13,6 @@ Ways to run the *main.py* file:
 OR
 
 - go to *workout_diary/src* -directory in a command shell or command prompt and type: **python3 main.py**
-
-## **Python libraries used**
-
-Application uses next libraries, that needs to be installed before:
-- *tkcalendar*: type to command prompt **pip install tkcalendar**
-- *bcrypt*: type to command prompt **pip install bcrypt**
 
 ## **What the application does?**
 
