@@ -85,9 +85,6 @@ class MainWindow:
             self.id_s_dates.append([row[0],row[3]])
             self.dates.append(str(row[3]))
         
-        print(self.workouts_to_calendar)
-        print(self.dates)
-        print(self.id_s_dates)
         self._show_workouts_menu_button()
 
     def _show_workouts(self, selected_date):
