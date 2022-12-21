@@ -52,7 +52,7 @@ Päänäkymässä on seuraavat toiminnallisuudet:
 
 - Uusi harjoitusohjelma luodaan napista Create new workout, jonka painamisen jälkeen aukeaa uuden harjoitusohjelman luontiin tarkoitettu ikkuna:
 
-![Luo uusi harjoitusohjelma](ttps://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/luo_harjoitusohjelma.jpg)
+![Luo uusi harjoitusohjelma](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/luo_harjoitusohjelma.jpg)
 
 Käyttäjä syöttää vapaisiin tekstikenttiin haluamansa tiedot ikkunassa annettujen määreiden mukaisesti:
 - Workout name: Harjoitukselle annettava nimi, ei tarvitse olla uniikki
