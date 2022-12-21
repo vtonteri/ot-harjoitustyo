@@ -29,7 +29,7 @@ Kun päänäkymässä painetaan nappia Update workouts from database, kutsutaan 
 
 Ohjelman loogisen tietomallin muodostavat luokat [User](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/src/entities/user.py) ja [Workout:](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/src/entities/workout.py)
 
-[Tietomalli](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/tietomalli.jpg)
+![Tietomalli](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/tietomalli.jpg)
 
 Toiminnallisista kokonaisuuksista vastaavat [user service](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/src/services/user_service.py) sekä [workout service](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/src/services/workout_service.py). Luokat tarjoavat käyttöliittymän kaikille toiminnoille omat metodit, joita ovat esimerkiksi:
 
@@ -37,9 +37,16 @@ Toiminnallisista kokonaisuuksista vastaavat [user service](https://github.com/vt
 - `create_user(username, password`
 - `hash_password(password)`
 - `get_logged_in_username()`
+- `create_workout(username, workout_name, date_and_time, repetition, workout_type, sets, details)`
+- `get_workouts(username)`
 
-- `get_undone_todos()`
-- `create_todo(content)`
-- `set_todo_done(todo_id)`
+User service pääsee käsiksi käyttäjän tietoihin tietojen tallennuksesta vastaavan, pakkauksessa *repositories*, sijaitsevien luokkien [user_repository](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/src/repositories/user_repository.py) ja [workout_repository](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/src/repositories/workout_repository.py). Workout service pääsee käsiksi sisäänkirjautuneen käyttäjän harjoitusohjelmiin 
+
+- `WorkoutService` ja `UserService` -luokkien ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:
+
+
+
+
+- ``
 
 ![Architecture](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/architecture.png)
