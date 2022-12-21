@@ -20,7 +20,7 @@ Ennen ohjelman käynnistystä asenna riippuvuudet komennolla:
 
 Ohjelma käynnistyy kirjautumisikkunaan:
 
-(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/kirjautumisikkuna.jpg)
+!(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/kirjautumisikkuna.jpg)
 
 Käyttäjä kirjautuu ohjelmaan syöttämällä käyttäjätunnuksen ja salasanan, jonka jälkeen painetaan Login-nappia.
 
@@ -28,13 +28,13 @@ Ohjelma suljetaan painamalla stop application nappia.
 
 Painamalla Create New User -nappia, käyttäjä voi luoda uuden käyttäjätunnuksen. Napin painamisen jälkeen aukeaa uuden käyttäjän luomiseen tarkoitettu ikkuna:
 
-(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/luo_uusi_kayttaja.jpg)
+!(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/luo_uusi_kayttaja.jpg)
 
 Ikkunassa käyttäjä määrittää itselleen käyttäjänimen sekä salasanan. Uusi käyttäjä luodaan painamalla Create new user -nappia. Näkymästä siirrytään takaisin kirjautumisikkunaan painamalla Exit-nappia. Tämän jälkeen käyttäjän pitää kirjautua ohjelmaan sisään.
 
 Sisäänkirjautumisen jälkeen käyttäjälle näytetään ohjelman päänäkymä:
 
-(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/paanakyma.jpg)
+!(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/paanakyma.jpg)
 
 Päänäkymässä on seuraavat toiminnallisuudet:
 - Create new workout:
@@ -45,9 +45,9 @@ Päänäkymässä on seuraavat toiminnallisuudet:
     - Käyttäjä valitsee minkä päivän harjoitusta hän haluaa tarkastella
 - Näkymässä olevaan tekstilaatikkoon ilmestyy harjoitusohjelman tiedot.
 
-(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/paanakyma_harjoitusohjelmalla.jpg)
+!(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/paanakyma_harjoitusohjelmalla.jpg)
 
-(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/paanakyma_select_date.jpg)
+!(https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/paanakyma_select_date.jpg)
 
 
 
