@@ -12,9 +12,6 @@ class WorkoutService:
         self.new_workout = None
         self._workout_repository = workout_repository
 
-    def __str__(self) -> str:
-        pass
-
     def create_workout(self, username: str, workout_name: str, date_and_time: str, repetition: bool, workout_type: str, sets: str, details: str):
 
         i = 0
@@ -26,23 +23,10 @@ class WorkoutService:
                 default_workout_repository.create_workout_to_database(workout_to_database)
                 break
             i += 1
-        #self.new_workout = Workout(workout_name, username, date_and_time, repetition, workout_type, sets, details)
         
-
-
     def get_workouts(self, username):
 
         return default_workout_repository.select_workouts(username)
-
-    def create_cardio_workout(self):
-        #cardio = Workout
-        pass
-
-    def delete_workout(self):
-        pass
-
-    def edit_weight_lift_workout(self):
-        pass
 
     def adjust_weights(self, weight, percent):
         x = 1 + (percent / 100)
