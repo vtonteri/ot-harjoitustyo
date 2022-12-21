@@ -69,8 +69,3 @@ Alasvetovalikosta valitaan myös harjoituksen tyyppi. Tyypin valinnalla ei ohjel
 - Kestävyysharjoitus (cardio)
 
 Harjoitusohjelma luodaan painamalla Create new workout -nappia. Näkymä suljetaan painamalla Exit -nappia ja sovellus palaa takaisin päänäkymään.
-
-## **How to run tests**
-
-Tests can be run in the following way: 
-- go to *workout_diary* -directory in a command shell or command prompt and type: **poetry run invoke test**
