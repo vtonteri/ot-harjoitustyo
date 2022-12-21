@@ -2,7 +2,7 @@
 
 Lataa käyttöösi ohjelman viimeisin [releasen](https://github.com/vtonteri/ot-harjoitustyo/releases) lähdekoodi, valitsemalla *Assets*-osion alta Source code
 
-## **How to start the application**
+## **Ohjelman käynnistäminen**
 
 Ennen ohjelman käynnistystä asenna riippuvuudet komennolla:
 
