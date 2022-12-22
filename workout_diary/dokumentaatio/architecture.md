@@ -74,3 +74,10 @@ Käyttäjän syötettyä haluamansa käyttäjätunnuksen ja salasanan, tarkistet
 ![Uuden harjoitusohjelman luominen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/create_workout_flowchart.jpg)
 
 Käyttäjä syöttää harjoitusohjelmansa tiedot kenttiin, jonka jälkeen harjoitusohjelmalle määritetään uusi `workout_id` käyttäen `random.randint`-metodia. Saatu kokonaisluku tarkastetaan tietokannasta, ja mikäli se on jo käytössä, arvotaan uusi. Id:n määrittämisen jälkeen harjoitusohjelma tallennetaan tietokantaan. 
+
+
+## **Ohjelmaan rakenteeseen jääneet heikkoudet**
+
+- Virheiden käsittelyä ei ole toteutettu kaikilta osin.
+    - Käyttäjän antamien virheellisten syötteiden virheilmoitusten näyttäminen ei kaikilta osin toimi
+- Osa UserServicen ja WorkoutServicen vastuulla olevista toiminnallisuuksista on toteutettu UI:n puolella
