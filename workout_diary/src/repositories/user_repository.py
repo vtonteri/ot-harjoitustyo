@@ -37,6 +37,17 @@ class UserRepository:
         return user
 
     def check_if_username_exist(self, username):
+
+        """Method checks if a username already exists
+        
+        Args:
+            username
+        Returns:
+            False: username does not exist
+            Username: username already exists
+        
+        """
+
         cursor = self._connection.cursor()
 
         try:
@@ -47,6 +58,16 @@ class UserRepository:
             return False
 
     def check_username_and_password(self, username):
+
+        """Method checks what is usernames password
+        
+        Args:
+            username
+        Returns:
+            Usernames password (hashed)
+        
+        """
+
         cursor = self._connection.cursor()
 
         cursor.execute("SELECT * FROM users where username = ?", (username,))
@@ -56,6 +77,9 @@ class UserRepository:
         return get_user_by_row(row)
 
     def delete_database(self):
+
+        """Method deletes users database"""
+
         cursor = self._connection.cursor()
         cursor.execute("delete from users")
 

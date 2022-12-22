@@ -2,26 +2,18 @@ class Workout:
     """Class for a one workout object. 
 
     Attributes: 
-        - Workout name
-        - Workout repetition
-            - Weekly or monthly
+        - Workout_id: integer
+        - Workout name: string
+        - Username: users username
+        - Date and time: datetime.date object (YYYY-MM-DD)
+        - Workout repetition: string
+            - Weekly or none 
+                - Weekly: workout will be added to database three times with a weeks interval
         - Workout type
             - Weight lifting or cardio
-        - Workout details, weight lifting
-            - Progressive or maintaining
-            - Sets
-                - Name
-                - Repetitions
-                - Weights
-        - Workout details, cardio
-            - Type: Running, Swimming, Cycling, Walking or User defined
-            - Duration
-            - Heart rate zone
-                - Moderate activity
-                - Weight Control
-                - Aerobic
-                - Anaerobic
-                - VO2 Maximum    
+        - Sets: string
+        - Workout details: string
+            - User can write details as wanted
     """
 
     def __init__(self, id: int, name: str, username: str, date_and_time: str, repetition: bool, workout_type: bool, sets: str, details: str):
@@ -37,26 +29,5 @@ class Workout:
 
     def __str__(self) -> str:
         return f"{self.workout_name}, {self.username}, {self.date_and_time}, {self.repetition}, {self.workout_type}, {self.sets}, {self.details}"
-
-    def get_workout_name(self):
-        return self.workout_name
-
-    def get_workout_username(self):
-        return self.username
-    
-    def get_workout_date_and_time(self):
-        return self.date_and_time
-
-    def get_workout_sets(self):
-        return self.sets
-    
-    def get_workout_repetition(self):
-        return self.repetition
-
-    def get_workout_type(self):
-        return self.workout_type
-
-    def get_workout_details(self):
-        return self.details
 
 

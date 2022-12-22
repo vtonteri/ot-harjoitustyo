@@ -20,6 +20,7 @@ class CreateNewWorkoutWindow:
         self._frame.pack(fill=constants.X)
     
     def destroy(self):
+        """Method hides current view"""
         self._frame.destroy()
 
     def _initialize(self):
@@ -110,7 +111,4 @@ class CreateNewWorkoutWindow:
         self._workout_name.delete(0, "end")
         self._workout_sets.delete(0, "end")
         self._workout_details.delete(0, "end")
-
-        print(f"{workout_name_to_database} {workout_username_to_database} {workout_date_to_database} {workout_repetition_to_database} {workout_type_to_database} {workout_sets_to_database} {workout_details_to_database}")
-
         

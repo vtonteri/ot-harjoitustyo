@@ -16,7 +16,12 @@ class WorkoutRepository:
         self._connection = connection
 
     def create_workout_to_database(self, workout):
-        """Method creates new workout to the database"""
+        """Method creates new workout to the database
+        
+        Args:
+            Workout
+        
+        """
 
         cursor_workout = self._connection.cursor()
 
@@ -29,6 +34,15 @@ class WorkoutRepository:
 
 
     def select_workouts(self, username):
+
+        """Method fetches and returns users workouts
+        
+        Args:
+            Username
+        Returns:
+            Usernames all workouts
+        
+        """
         cursor_workout = self._connection.cursor()
         
         cursor_workout.execute(
@@ -40,6 +54,16 @@ class WorkoutRepository:
         return rows
 
     def get_workout_id(self, workout_id):
+
+        """Method checks if a workout_id already exists
+        
+        Args:
+            workout_id
+        Returns:
+            False: workout_id does not exist
+            True: workout_id do already exist
+        
+        """
         cursor_workout = self._connection.cursor()
 
         try:

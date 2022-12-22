@@ -18,11 +18,11 @@ class NewUserWindow:
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Method hides current view"""
         self._frame.destroy()
 
     def _initialize(self):
         "Method initilalizes Create New User window"
-
 
         self._frame = ttk.Frame(master=self._root) 
         label = ttk.Label(master=self._frame, text="Create New User")

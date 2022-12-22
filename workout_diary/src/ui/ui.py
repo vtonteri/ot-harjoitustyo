@@ -16,7 +16,8 @@ class UI:
         Class starts Workout Diary Application
         """
 
-    def start_login(self): #function starts the application 
+    def start_login(self): 
+        """Method starts programs graphic interface and shows login window"""
         self._show_login_view()
 
     def _hide_current_view(self): #function hides current view

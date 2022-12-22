@@ -18,6 +18,7 @@ class LoginWindow:
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Method hides current view"""
         self._frame.destroy()
 
     def _hide_error(self):

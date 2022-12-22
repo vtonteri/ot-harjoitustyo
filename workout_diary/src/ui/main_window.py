@@ -12,6 +12,8 @@ class MainWindow:
         self._frame = None
         self._username = user_service.get_logged_in_username()
         self.dates = ["YYYY-MM-DD"]
+        self.workouts_to_calendar = {}
+        self.id_s_dates = []
 
         self._initialize()
 
@@ -26,6 +28,7 @@ class MainWindow:
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Method hides current view"""
         self._frame.destroy()
 
     def _initialize(self):
@@ -77,13 +80,15 @@ class MainWindow:
 
     def _update_workouts(self):
         workouts_from_database = workout_service.get_workouts(self._username)
-        self.workouts_to_calendar = {}
-        self.id_s_dates = []
 
         for row in workouts_from_database:
-            self.workouts_to_calendar[row[0]] = [row[1], row[2], row[3], row[4], row[5], row[6], row[7]]
-            self.id_s_dates.append([row[0],row[3]])
-            self.dates.append(str(row[3]))
+            if row[0] in self.workouts_to_calendar.keys():
+                pass
+
+            elif row[0] not in self.workouts_to_calendar.keys():
+                self.workouts_to_calendar[row[0]] = [row[1], row[2], row[3], row[4], row[5], row[6], row[7]]
+                self.id_s_dates.append([row[0],row[3]])
+                self.dates.append(str(row[3]))
         
         self._show_workouts_menu_button()
 

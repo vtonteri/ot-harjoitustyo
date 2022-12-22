@@ -13,13 +13,13 @@ class User:
 
 
     def __str__(self):
-        "Method returns User's information as str"
+        """Method returns User's information as str"""
         return f"{self.username}, {self.password}"
 
     def username(self):
-        "Method returns Users username as str"
+        """Method returns Users username as str"""
         return self.username
 
     def password(self):
-        "Method returns Users password a str"
+        """Method returns Users password as a str"""
         return self.password

@@ -1,6 +1,8 @@
 from database_connection import get_database_connection
 
 def drop_tables(connection):
+
+    """Deletes database if one exists already. Drops users and workouts tables"""
     cursor = connection.cursor()
 
     cursor.execute('''

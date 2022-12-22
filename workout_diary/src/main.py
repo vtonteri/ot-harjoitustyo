@@ -3,6 +3,7 @@ from tkinter import Tk
 from initialize_database import initialize_database
 
 def main():
+    """Starts Workout application"""
     window = Tk()
     ui = UI(window)
     ui.start_login()

@@ -43,4 +43,4 @@
     - Create new workout to database table = workouts
 - Fetching workouts from the database and 
 - Displaying logged in users workouts
-
+- Documentation updated
