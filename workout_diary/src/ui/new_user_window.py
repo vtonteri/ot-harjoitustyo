@@ -1,8 +1,6 @@
-from tkinter import ttk, constants, Tk
-from entities.user import User
+from tkinter import ttk, constants
 from services.user_service import user_service
 from repositories.user_repository import user_repository
-import bcrypt
 
 class NewUserWindow:
     def __init__(self, root, handle_goodbye):

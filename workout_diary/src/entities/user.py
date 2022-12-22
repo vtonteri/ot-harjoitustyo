@@ -1,5 +1,3 @@
-import bcrypt
-
 class User:
     """Class, creates a new User.
 

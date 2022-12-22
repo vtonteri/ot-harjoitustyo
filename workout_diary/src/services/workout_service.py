@@ -1,6 +1,4 @@
-from entities.user import User
 from entities.workout import Workout
-import datetime
 import random
 from repositories.workout_repository import (
     workout_repository as default_workout_repository)

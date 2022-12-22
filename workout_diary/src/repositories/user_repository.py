@@ -36,10 +36,6 @@ class UserRepository:
  
         return user
 
-    def _read(self):
-        users = []
-        pass
-
     def check_if_username_exist(self, username):
         cursor = self._connection.cursor()
 

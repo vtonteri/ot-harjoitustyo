@@ -1,6 +1,3 @@
-from entities.user import User
-import datetime
-
 class Workout:
     """Class for a one workout object. 
 

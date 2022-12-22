@@ -3,7 +3,7 @@ from entities.user import User
 from services.user_service import user_service
 from repositories.user_repository import user_repository
 from services.workout_service import workout_service
-from tkcalendar import Calendar, DateEntry
+from tkcalendar import DateEntry
 import datetime
 
 

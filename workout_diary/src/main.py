@@ -1,4 +1,4 @@
-from ui.ui_final import UI
+from ui.ui import UI
 from tkinter import Tk
 from initialize_database import initialize_database
 

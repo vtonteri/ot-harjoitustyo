@@ -19,8 +19,8 @@ def drop_tables(connection):
 
 def create_tables(connection):
     """
-    Two tables are created to the database: users and workout
-    User and workout are connected together using username as a foreign key in the workout
+    Two tables are created to the database: users and workouts
+    User and workout are connected together using username
     """
     cursor = connection.cursor()
 
