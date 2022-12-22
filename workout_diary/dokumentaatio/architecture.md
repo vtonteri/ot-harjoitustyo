@@ -44,8 +44,26 @@ User service pääsee käsiksi käyttäjän tietoihin tietojen tallennuksesta va
 
 - `WorkoutService` ja `UserService` -luokkien ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:
 
+![Pakkauskaavio](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/pakkauskaavio.jpg)
 
 
+## **Tietojen pysyväistallennus**
+
+Pakkauksen *repositories* luokat `WorkoutRepository` ja `UserRepository` vastaavat tietojen tallentamisesta SQLite-tietokantaan. Molemmat luokat tallentavat tiedot eri tauluihin. Käyttäjän tiedot tallennetaan `users` tauluun ja harjoitusohjelman tiedot `workouts` tauluun, jotka alustetaan ohjelman käynnistyessä, suorittamalla `initialize_database` tiedosto. Luokat noudattavat Repository-suunnittelumallia ja ne voidaan tarvittaessa korvata uusilla toteutuksilla.
+
+
+## **Päätoiminnallisuudet**
+
+Kuvataan seuraavaksi ohjelman päätoiminnallisuudet sekvenssikaavioilla.
+
+
+### **Käyttäjän sisäänkirjautuminen**
+
+![Sisäänkirjautuminen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/login_flowchart.jpg)
+
+![Uuden käyttäjän luominen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/create_user_flowchart.jpg)
+
+![Uuden käyttäjän luominen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/create_workout_flowchart.jpg)
 
 - ``
 
