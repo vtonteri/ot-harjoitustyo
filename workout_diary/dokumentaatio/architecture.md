@@ -61,10 +61,16 @@ Kuvataan seuraavaksi ohjelman päätoiminnallisuudet sekvenssikaavioilla.
 
 ![Sisäänkirjautuminen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/login_flowchart.jpg)
 
+Käyttäjä kirjoittaa kenttiin omat tunnuksensa, joiden jälkeen tapahtumankäsittelijä selvittää, löytyykö tietokannasta kyseiset tunnukset. Salasanan tarkastus tapahtuu erillisen `check_password` metodin avulla. Salasana on tallennettu salattuna tietokantaan.
+
+### **Uuden käyttäjän luominen**
+
 ![Uuden käyttäjän luominen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/create_user_flowchart.jpg)
 
-![Uuden käyttäjän luominen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/create_workout_flowchart.jpg)
+Käyttäjän syötettyä haluamansa käyttäjätunnuksen ja salasanan, tarkistetaan tietokannasta, onko tallennettuna samalla käyttäjätunnuksella, mikäli on, antaa ohjelma virheilmoituksen käyttäjälle. Mikäli käyttäjätunnusta ei ole vielä käytössä, luodaan uusi käyttäjätunnus ja salasana. Salasana salataan, ennen sen tallentamista tietokantaan, käyttäen `hash_password` metodia.
 
-- ``
+### **Uuden harjoitusohjelman luominen**
 
-![Architecture](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/architecture.png)
+![Uuden harjoitusohjelman luominen](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/create_workout_flowchart.jpg)
+
+Käyttäjä syöttää harjoitusohjelmansa tiedot kenttiin, jonka jälkeen harjoitusohjelmalle määritetään uusi `workout_id` käyttäen `random.randint`-metodia. Saatu kokonaisluku tarkastetaan tietokannasta, ja mikäli se on jo käytössä, arvotaan uusi. Id:n määrittämisen jälkeen harjoitusohjelma tallennetaan tietokantaan. 
