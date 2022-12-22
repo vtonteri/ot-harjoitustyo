@@ -31,3 +31,7 @@ class TestUserRepository(unittest.TestCase):
         user = user_repository.check_username_and_password(self.user_kim.username)
 
         self.assertEqual(user.username, self.user_kim.username)
+
+    def test_check_if_username_exist(self):
+        user_repository.create(self.user_kim)
+        self.assertFalse(user_repository.check_if_username_exist("mike"))

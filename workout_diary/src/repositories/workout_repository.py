@@ -74,5 +74,14 @@ class WorkoutRepository:
         except:
             return None
 
+    def delete_database(self):
+
+        """Method deletes workputs database"""
+
+        cursor = self._connection.cursor()
+        cursor.execute("delete from workouts")
+
+        self._connection.commit()
+
 workout_repository = WorkoutRepository(get_database_connection())
     
