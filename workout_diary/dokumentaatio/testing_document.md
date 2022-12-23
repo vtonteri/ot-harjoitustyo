@@ -37,3 +37,4 @@ Määrittelydokumentissa kuvatut toiminnallisuudet on testattu järjetelmätesta
 - Järjestelmä ei anna virheilmoitusta, mikäli käyttäjätunnus on jo käytössä.
 - Järjestelmä ei indikoi, mikäli workout_id:n luominen ei onnistu
 - Järjestelmä ei indikoi, mikäli harjoitusohjelmaa ei kyetä luomaan (esimerkiksi puutteellisesti täytetyt tiedot kentissä)
+- Järjestelmä ei indikoi onnistuneesta käyttäjän tai harjoitusohjelman luomisesta
