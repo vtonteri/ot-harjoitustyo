@@ -49,7 +49,7 @@ User service pääsee käsiksi käyttäjän tietoihin tietojen tallennuksesta va
 
 ## **Tietojen pysyväistallennus**
 
-Pakkauksen *repositories* luokat `WorkoutRepository` ja `UserRepository` vastaavat tietojen tallentamisesta SQLite-tietokantaan. Molemmat luokat tallentavat tiedot eri tauluihin. Käyttäjän tiedot tallennetaan `users` tauluun ja harjoitusohjelman tiedot `workouts` tauluun, jotka alustetaan ohjelman käynnistyessä, suorittamalla `initialize_database` tiedosto. Luokat noudattavat Repository-suunnittelumallia ja ne voidaan tarvittaessa korvata uusilla toteutuksilla.
+Pakkauksen *repositories* luokat `WorkoutRepository` ja `UserRepository` vastaavat tietojen tallentamisesta SQLite-tietokantaan. Molemmat luokat tallentavat tiedot eri tauluihin. Käyttäjän tiedot tallennetaan `users` tauluun ja harjoitusohjelman tiedot `workouts` tauluun, jotka alustetaan ennen ohjelman ensimmäistä käynnistämistä, suorittamalla `poetry run invoke build`. Luokat noudattavat Repository-suunnittelumallia ja ne voidaan tarvittaessa korvata uusilla toteutuksilla.
 
 
 ## **Päätoiminnallisuudet**

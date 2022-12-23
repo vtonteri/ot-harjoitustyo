@@ -46,3 +46,4 @@
 - Documentation updated
 - Finishing tests
 - Bug fixes
+- Added build.py for initializing database

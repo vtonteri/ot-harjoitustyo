@@ -28,4 +28,5 @@
 | 20.12. | 2 | Harjoitusohjelmien näyttäminen käyttäjälle pääikkunassa |
 | 21.12. | 2 | Bugien korjaus, dokumentointi, testien kirjoittaminen |
 | 22.12. | 2 | Bugien korjaus, dokumentointi, testien kirjoittaminen |
-| Yht | 76 |  |
+| 23.12. | 2 | Bugien korjaus, dokumentointi, testien kirjoittaminen |
+| Yht | 78 |  |
