@@ -1,61 +1,75 @@
 # **Workout Diary**
 
-One can create, save and follow a workout. Multiple users can use the application, with their own workouts.
+Ohjelman avulla käyttäjä voi tallentaa ja katsella omia harjoituksiaan.
 
-At the moment there is no connection to database, so the users can not be created.
+## **Huomioita Python-versioista**
 
-## **Notification about Python versions**
+Ohjelma on testattu ja toiminta varmistettu Python 3.9.7 -versiolla. Aiempien versioiden kanssa toimintaa ei voida taata.
 
-Application is tested with Python 3.9.7. There might be some problems especially with older Python versions.
+## **Dokumentaatio**
 
-## **Documentation**
+**[Käyttöohje](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/manual.md)**
 
-**[Workout Diary Manual](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/manual.md)**
+**[Vaatimusmäärittely](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/vaatimusmaarittely.md)**
 
-**[Requirements specification](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/vaatimusmaarittely.md)**
+**[Testausdokumentti](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/testing_document.md)**
 
-**[Testing document, still under construction](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/testing_document.md)**
+**[Tuntikirjanpito](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/tuntikirjanpito.md)**
 
-**[Working diary](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/tuntikirjanpito.md)**
+**[Muutosloki](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/changelog.md)**
 
-**[Changelog](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/changelog.md)**
+**[Arkkitehtuurikuvaus](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/architecture.md)**
 
-**[Architecture](https://github.com/vtonteri/ot-harjoitustyo/blob/main/workout_diary/dokumentaatio/architecture.md)**
+# **Workout diary käyttöohje**
 
-# **Workout diary manual**
+Lataa käyttöösi ohjelman viimeisin [releasen](https://github.com/vtonteri/ot-harjoitustyo/releases) lähdekoodi, valitsemalla *Assets*-osion alta Source code
 
-## **How to start the application**
+## **Asennus**
 
-Application can be started by running *main.py* file, it is located in the src-directory's root.
+1. Alusta tietokanta komennolla:
 
-Ways to run the *main.py* file:
+`poetry run invoke build`
 
-- go to *workout_diary* -directory in a command shell or command prompt and type: **poetry install** and then **poetry run invoke start**
+2. Asenna riippuvuudet komennolla:
 
-OR
+`poetry install`
 
-- go to *workout_diary/src* -directory in a command shell or command prompt and type: **python3 main.py**
+4. Ohjelma voidaan käynnistää menemällä *workout_diary* kansioon komentorivillä ja kirjoittamalla 
 
-## **Python libraries used**
+`poetry run invoke start`
 
-Application uses next libraries, that needs to be installed before:
-- *tkcalendar*: type to command prompt **pip install tkcalendar**
-- *bcrypt*: type to command prompt **pip install bcrypt**
+5. Vaihtoehtoinen tapa käynnistää, on mennä *workout_diary/src* -kansioon ja antaa komento:
 
-## **What the application does?**
+`poetry python3 main.py`
 
-User can create own profile and log in (at the moment logging in doesn't work)
+## **Komentorivitoiminnot**
 
-## **How to stop the application**
+1. Tietokannan alustaminen
 
-You can press *Stop application* button or just close the window.
+`poetry run invoke build`
 
-## **How to run tests**
+2. Käynnistäminen
 
-Tests can be run in the following way: 
-- go to *workout_diary* -directory in a command shell or command prompt and type: **poetry run invoke test**
+`poetry run invoke start`
+
+3. Testaus 
+
+`poetry run invoke test`
+
+4. Testikattavuus
+
+`poetry run invoke coverage-report`
+
+Raportti löytyy *htmlcov* hakemistosta
+
+5. Pylint
+
+`poetry run invoke lint`
 
 ## **Releases**
 
 **[Release, week 5](https://github.com/vtonteri/ot-harjoitustyo/releases/tag/viikko5)**
+
 **[Release, week 6](https://github.com/vtonteri/ot-harjoitustyo/releases/tag/Viikko6)**
+
+**[Final release, week 7](https://github.com/vtonteri/ot-harjoitustyo/releases/tag/Viikko7)**
