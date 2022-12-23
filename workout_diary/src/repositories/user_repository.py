@@ -6,7 +6,7 @@ def get_user_by_row(row):
 
 class UserRepository:
 
-    """Class handles user-class related activities 
+    """Class handles user-class related activities
     to and from sqlite3 database"""
 
     def __init__(self, connection):
@@ -14,7 +14,6 @@ class UserRepository:
 
         Args:
         connection is the database_connection's connection-function"""
-        
         self._connection = connection
 
     def find_all(self):
@@ -33,25 +32,24 @@ class UserRepository:
             (user.username, user.password)
         )
         self._connection.commit()
- 
         return user
 
     def check_if_username_exist(self, username):
 
         """Method checks if a username already exists
-        
         Args:
             username
         Returns:
             False: username does not exist
             Username: username already exists
-        
         """
 
         cursor = self._connection.cursor()
 
         try:
-            if cursor.execute("SELECT username FROM users WHERE username = %(username)s, (username,)") == username:
+            if cursor.execute(
+                "SELECT username FROM users WHERE username = %(username)s, (username,)"
+                ) == username:
                 return username
 
         except:
@@ -60,12 +58,11 @@ class UserRepository:
     def check_username_and_password(self, username):
 
         """Method checks what is usernames password
-        
+
         Args:
             username
         Returns:
             Usernames password (hashed)
-        
         """
 
         cursor = self._connection.cursor()

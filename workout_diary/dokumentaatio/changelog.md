@@ -44,3 +44,5 @@
 - Fetching workouts from the database and 
 - Displaying logged in users workouts
 - Documentation updated
+- Finishing tests
+- Bug fixes

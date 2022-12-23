@@ -1,6 +1,5 @@
-from ui.ui import UI
 from tkinter import Tk
-from initialize_database import initialize_database
+from ui.ui import UI
 
 def main():
     """Starts Workout application"""
@@ -11,5 +10,4 @@ def main():
     window.mainloop()
 
 if __name__ == "__main__":
-    initialize_database()
     main()

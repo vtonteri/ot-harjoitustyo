@@ -16,18 +16,18 @@ class UserService:
     def create_user(self, new_username, new_password):
         """
         Creates new user
-        
-        Args: 
+
+        Args:
             login_username: str, users unique username
             login_password: str, users unique password, hashed
         """
         self.new_user = self._user_repository.create(User(new_username, new_password))
-        
+
     def login_user(self, login_username, login_password):
         """
         Logs user in
-        
-        Args: 
+
+        Args:
             login_username: str, users unique username
             login_password: str, users unique password, hashed
         """
@@ -36,12 +36,12 @@ class UserService:
 
         if not user:
             raise InvalidCredentialsError("Invalid username or password")
-        
+
         password_check = self.check_password(user, login_password)
 
         if password_check == False:
             raise InvalidCredentialsError("Invalid username or password")
-        
+
         self._user = user
         self.logged_in_username = user.username
 
@@ -51,8 +51,8 @@ class UserService:
 
         """
         Encrypts users password
-        
-        Args: 
+
+        Args:
             plain_password: str, users password, not hashed
 
         Return:
@@ -65,16 +65,16 @@ class UserService:
 
         """
         Checks users password
-        
-        Args: 
+
+        Args:
             plain_password: str, users password, not hashed
 
         Return:
             False: if the password was incorrect
             True: if the password was correct
-        """   
-
+        """
         encoded_plain_password = str(plain_password).encode('utf-8')
+
         return bcrypt.checkpw(encoded_plain_password, user.password)
 
     def get_logged_in_username(self):
@@ -86,6 +86,5 @@ class UserService:
             logged in users username
         """
         return self.logged_in_username
-        
 
 user_service = UserService()

@@ -2,19 +2,25 @@
 
 Lataa käyttöösi ohjelman viimeisin [releasen](https://github.com/vtonteri/ot-harjoitustyo/releases) lähdekoodi, valitsemalla *Assets*-osion alta Source code
 
+## **Ohjelman asennus**
+
+1. Asenna riippuvuudet komennolla:
+
+`poetry install`
+
+2. Alusta tietokannat komennolla:
+
+`poetry run invoke build`
+
 ## **Ohjelman käynnistäminen**
-
-Ennen ohjelman käynnistystä asenna riippuvuudet komennolla:
-
-**poetry install**
 
 - Ohjelma voidaan käynnistää menemällä *workout_diary* kansioon komentorivillä ja kirjoittamalla 
 
-**poetry run invoke start**
+`poetry run invoke start`
 
 - Vaihtoehtoinen tapa käynnistää, on mennä *workout_diary/src* -kansioon ja antaa komento:
 
-**python3 main.py**
+`python3 main.py`
 
 ## **Kirjautuminen**
 

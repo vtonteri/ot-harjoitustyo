@@ -4,7 +4,7 @@ class User:
     Attributes:
         - User details
             - Name
-            - Password    
+            - Password
     """
 
     def __init__(self, username, password):

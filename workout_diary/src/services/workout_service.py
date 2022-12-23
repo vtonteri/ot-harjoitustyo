@@ -13,12 +13,14 @@ class WorkoutService:
     def create_workout(self, username: str, workout_name: str, date_and_time: str, repetition: str, workout_type: str, sets: str, details: str):
 
         """
-        Creates new workout and calls workout repositorys create_workout_to_database, which saves a workout to database (table workouts).
+        Creates new workout and calls workout repositorys
+        create_workout_to_database, which saves a workout to database (table workouts).
+        Gives also a unique id to a workout (random integer between 1 - 20000).
+        Checks if id already exists.
 
-        Gives also a unique id to a workout (random integer between 1 - 20000). Checks if id already exists.
-        
-        Args: 
-            username: str, workout_name: str, date_and_time: str, repetition: bool, workout_type: str, sets: str, details: str
+        Args:
+            username: str, workout_name: str, date_and_time: str,
+            repetition: string, workout_type: str, sets: str, details: str
         """
 
         i = 0
@@ -30,12 +32,12 @@ class WorkoutService:
                 default_workout_repository.create_workout_to_database(workout_to_database)
                 break
             i += 1
-        
+
     def get_workouts(self, username):
 
         """
         Returns all logged in users workouts
-        
+
         Args:
             Username
 
